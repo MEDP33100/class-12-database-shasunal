@@ -1,0 +1,11 @@
+<h1>Pet Listings</h1>
+
+{{#each pets}}
+  <div class="pet-card">
+    <h2>{{this.name}}</h2>
+    <p>ype: {{this.type}}</p>
+    <p>Age: {{this.age}}</p>
+    <p>Breed: {{this.breed}}</p>
+    <p>Adopted: {{#if this.adopted}}Yes{{else}}No{{/if}}</p>
+  </div>
+{{/each}}
